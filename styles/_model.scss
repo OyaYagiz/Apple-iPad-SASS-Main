@@ -1,0 +1,58 @@
+.model{
+    &__container{
+        padding-top: 32px;
+        row-gap: 40px;
+    }
+    &__content{
+        position: relative;
+        justify-self: center;
+    }
+    &__img{
+        width: 320px;
+    }
+    &__tooltip{
+        position: absolute;
+        &-text{
+            background: var(--gradient-color);
+            padding: 4px 12px;
+            border-radius: 64px;
+            color: var(--white-color);
+            font-size: var(--small-font-size);
+            font-weight: var(--font-medium);
+            position: absolute;
+            transform: translate(60px, -40px);
+            white-space: nowrap;
+        }
+        &-1 {
+            top: 70px;
+            right: 70px;
+          }
+          &-2 {
+            top: 7px;
+            right: 110px;
+          }
+          &-3 {
+            bottom: 60px;
+            left: -25px;
+            transform: scaleX(-1);
+         }
+          
+          &-4 {
+            top: 170px;
+            left: 260px;
+          }
+          &__button {
+            justify-self: center;
+          }
+        }
+    }
+    .model__tooltip-3 .model__tooltip-text {
+        transform: translate(82px, -56px) scaleX(-1) ;
+     }
+
+// @media screen and (min-width:1150px) {
+//     .model__img{
+//         width: 600px;
+     
+//   }
+// }

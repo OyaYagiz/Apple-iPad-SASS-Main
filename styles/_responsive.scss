@@ -1,0 +1,168 @@
+@media screen and (min-width:820px) {
+  .container {
+    margin-inline: auto;
+    
+  }
+
+  .section {
+    padding: 112px 32px;
+  }
+
+  .section__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 72px;
+  }
+
+  .home {
+    &__container {
+      position: relative;
+    }
+  
+    &__img {
+      width: 1500px;
+      height: 800px;
+    }
+
+    &__title {
+      font-size: var(--biggest-font-size);
+      
+    
+    }
+
+    &__tooltip {
+      right: 235px;
+      top: 11rem;
+    }
+
+    &-img {
+      width: initial;
+    }
+
+    &-text {
+      font-size: var(--normal-font-size);
+      transform: translate(82px, -52px);
+    }
+
+    &__social-text {
+      font-size: var(--normal-font-size);
+    }
+
+    &__social-links {
+      row-gap: 16px;
+    }
+
+    &__social-link {
+      font-size: 24px;
+    }
+  }
+
+  .about {
+    &__container {
+      grid-template-columns: 400px 500px;
+      align-items: center;
+      column-gap: 60px;
+    }
+
+    &__description {
+      margin-bottom: 10px;
+    }
+    &__img{
+      margin: 20px 320px;
+      width: 1800px;
+      height: 500px;
+    }
+  }
+
+
+  .favorite__container {
+    max-width: 1100px;
+    margin-inline: auto;
+  }
+
+  .favorite__img {
+    width: 500px;
+  }
+
+  .model {
+    &__img {
+      width: 600px;
+    }
+
+    &__tooltip {
+      &-img {
+        width: initial;
+      }
+
+      &-text {
+        font-size: var(--normal-font-size);
+        padding: 8px 20px;
+        transform: translate(82px, -56px);
+      }
+
+      &-1 {
+        top: 30px;
+        left: 200px;
+      }
+
+      &-2 {
+        transform: initial;
+        top: 23rem;
+        right: 32px;
+      }
+
+      &-3 {
+        transform: scaleX(-1);
+        top: 18rem;
+        left: 28px;
+        bottom: 100px;
+      }
+
+      &-4 {
+        top: 12rem;
+        left: 320px;
+      }
+    }
+  }
+
+  .model__tooltip-3 .model__tooltip-text {
+    transform: translate(82px, -56px) scaleX(-1);
+  }
+
+  .sponsor__container {
+    grid-template-columns: repeat(4, max-content);
+  }
+}
+
+@media screen and (max-width:820px) {
+  .home{
+    &__tooltip {
+      right: 60px;
+      top: 9rem;
+      
+    }
+    &__title {
+      font-size: var(--biggest-font-size);
+      font-weight: 200%;
+      display: flex;
+      column-gap: 4px;
+      color: var(--first-color);
+      position:absolute;
+      top: 123px;
+      padding:10px 40px;
+      margin-left: 130px;
+      justify-self: center;
+      span:nth-child(2) {
+        z-index: -1;
+      }
+    }
+  }
+}
